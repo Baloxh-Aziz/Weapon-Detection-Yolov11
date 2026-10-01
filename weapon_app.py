@@ -6,7 +6,7 @@ st.title("Weapon_X-Ray_Detection")
 
 model = YOLO("best.pt")
 
-uplaoded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 
 if uploaded_file:
     img = Image.open(uploaded_file)
